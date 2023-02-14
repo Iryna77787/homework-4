@@ -9,6 +9,7 @@
     --primary-text-color: #2E2F42;
     --secondary-text-color: #434455;
     --tertiary-text-color: #FFFFFF;
+    --icon-color: #8E8F99;
 }
 
 ul {
@@ -73,10 +74,10 @@ body {
     margin-right: auto;
     padding-left: 15px;
     padding-right: 15px;
-    outline: 2px solid red;
+    /* outline: 2px solid red; */
 }
 
-.title-two {
+.title {
     margin-bottom: 72px;
     font-size: 36px;
     line-height: 1.11;
@@ -86,10 +87,7 @@ body {
     color: var(--primary-text-color);
 }
 
-.section {
-    padding-top: 120px;
-    padding-bottom: 120px;
-}
+
 
 /*============================= HEADER ====================== */
 
@@ -192,7 +190,10 @@ body {
 .hero {
     padding-top: 188px;
     padding-bottom: 188px;
-    background: var(--primary-text-color)
+    background: var(--primary-text-color);
+   background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url('../images/hero/people-office\ 1.jpg');
+   background-size: cover;
+   
 }
 
 .hero-title {
@@ -234,6 +235,21 @@ body {
 }
 
 /* ====================== FEATURES ================= */
+
+
+.features-social-list-link {
+    margin-bottom: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    width: 264px;
+    height: 112px;
+    background: #F4F4FD;
+    border-radius: 4px;
+    gap: 24px;
+}
 
 .features-menu {
     display: flex;
@@ -311,10 +327,33 @@ body {
 }
 
 .team-text {
+    margin-bottom: 8px;
     line-height: 1.5;
     text-align: center;
     letter-spacing: 0.02em;
     color: var(--secondary-text-color);
+}
+
+.social-list {
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+}
+
+.social-list-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: var(--secondary-acent-color);
+}
+
+.social-list-link:hover,
+.social-list-link:focus {
+    background-color: var(--acent-color);
+
 }
 
 /* ========= PORTFOLIO ============ */
@@ -386,13 +425,63 @@ body {
     color: var(--secondary-text-color);
 }
 
+/* ============== customers =========== */
 
+.customers {
+    padding-top: 130px;
+    padding-bottom: 120px;
+}
+
+.customers-title {
+    margin-bottom: 72px;
+    font-size: 36px;
+    line-height: 1.11;
+    text-align: center;
+    letter-spacing: 0.02em;
+    text-transform: capitalize;
+    color: var(--primary-text-color);
+}
+
+.customers-list {
+   display: flex;
+    justify-content: center;
+    gap: 24px;
+}
+
+    .customers-out {
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    width: 160px;
+    height: 88px;
+    fill:var(--icon-color);
+    border: 1px solid var(--icon-color);
+    border-radius: 4px;
+    
+}
+
+.customers-svg { 
+   width: 104px;
+    height: 56px;    
+}
+
+.customers-out:hover,
+.customers-out:focus {
+    fill: var(--acent-color);
+    border: 1px solid var(--acent-color);
+}
 /*=================== FOOTER ============ */
 
 .footer {
+    
+    display: flex;
     padding-top: 100px;
     padding-bottom: 100px;
     background: var(--primary-text-color);
+}
+
+.futer-container {
+   display: flex;
 }
 
 .footer-link {
@@ -419,9 +508,40 @@ body {
 }
 
 .footer-text {
+   margin-right: 120px;
     margin-top: 16px;
     max-width: 264px;
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: var(--primary-acent-color);
+}
+.footer-text-text {
+    margin-bottom: 16px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+     color: var(--tertiary-text-color);
+}
+
+.footer-list {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+}
+
+.footer-list-link {
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.footer-list-link:hover,
+.footer-list-link:focus {
+    background-color: #31D0AA;
 }

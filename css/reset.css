@@ -39,3 +39,5 @@ address {
     clip: rect(0 0 0 0);
     overflow: hidden;
 }
+
+.ul.social-list>li.social-list-item*4>a.social-list-link>svg.socisl-list-icon>use
