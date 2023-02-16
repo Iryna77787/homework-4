@@ -93,8 +93,7 @@ body {
 /*============================= HEADER ====================== */
 
 .header {
-    padding-top: 24px;
-    padding-bottom: 24px;
+   
     border-bottom: 1px solid var(--primary-acent-color);
 }
 
@@ -191,6 +190,8 @@ body {
 /*===================== HERO =====================*/
 
 .hero {
+    max-width: 1440px;
+    margin: 0 auto;
     padding-top: 188px;
     padding-bottom: 188px;
     background: var(--primary-text-color);
@@ -217,7 +218,6 @@ body {
     line-height: 1.5;
     letter-spacing: 0.04em;
     display: block;
-    align-items: center;
     margin-left: auto;
     margin-right: auto;
     min-width: 169px;
@@ -378,6 +378,7 @@ body {
     border-radius: 4px;
     color: var(--acent-color);
     background: var(--tertiary-acent-color);
+    cursor: pointer;
 }
 
 .filter-menu {
@@ -400,16 +401,10 @@ body {
     gap: 24px;
 }
 
-.portfolio-box {
-    box-sizing: border-box;
-    width: 360px;
-    height: 420px;
-    left: 540px;
-    top: 288px;
-    background: var(--tertiary-text-color);
-    border: 1px solid var(--tertiary-acent-color);
+.portfolio-item:hover {
     box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
+
 .portfolio-description {
     background:var(--tertiary-text-color);
     border: 1px solid var(--primary-acent-color);
@@ -453,7 +448,6 @@ body {
 
 .customers-list {
    display: flex;
-    justify-content: center;
     gap: 24px;
 }
 
@@ -461,7 +455,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center; 
-    width: 160px;
+    width: 168px;
     height: 88px;
     fill:var(--icon-color);
     border: 1px solid var(--icon-color);
@@ -517,17 +511,20 @@ body {
 
 
 .footer-text {
-   margin-right: 120px;
-    margin-top: 16px;
+   margin-top: 16px;
     width: 264px;
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: var(--primary-acent-color);
 }
-.footer-text-text {
+
+.container-logo {
+    margin-right: 120px;
+}
+
+.footer-title {
     margin-bottom: 16px;
     font-weight: 500;
-    font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
      color: var(--tertiary-text-color);
@@ -554,4 +551,4 @@ body {
 .footer-list-link:hover,
 .footer-list-link:focus {
     background-color: #31D0AA;
-    b
+}
